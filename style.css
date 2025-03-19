@@ -56,3 +56,8 @@ a {
 a:hover {
   color: #1d6fa5;
 }
+
+.divider {
+  width: 100%;
+  border-top: 1px solid #bababad3;
+}
