@@ -7,14 +7,14 @@ const svg = d3
   .attr("width", width)
   .attr("height", height);
 
-d3.csv("../data/observations.csv").then((oData) => {
+d3.csv("../../data/observations.csv").then((oData) => {
   oData.map((d) => {
     d.angle = +d.angle;
     d.timestamp = d3.timeParse("%H:%M:%S")(d.timestamp);
     d.totaltime = formatTime(d.totaltime);
   });
   console.log(oData);
-  d3.csv("../data/analysis.csv").then((aData) => {
+  d3.csv("../../data/analysis.csv").then((aData) => {
     aData.map((d) => {
       d.minangle = +d.minangle;
       d.maxangle = +d.maxangle;
