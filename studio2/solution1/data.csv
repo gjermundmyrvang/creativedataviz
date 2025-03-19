@@ -1,0 +1,11 @@
+source,target,relationship,population
+Blue Whale,Humpback Whale,Genetic Similarity,20000
+Blue Whale,Fin Whale,Habitat Overlap,25000
+Humpback Whale,Gray Whale,Migration Overlap,80000
+Sperm Whale,Pygmy Sperm Whale,Genetic Similarity,300000
+Fin Whale,Sei Whale,Genetic Similarity,100000
+Sei Whale,Bryde's Whale,Genetic Similarity,90000
+Orca (Killer Whale),Sperm Whale,Predation,50000
+Beluga Whale,Narwhal,Genetic Similarity,150000
+Narwhal,Bowhead Whale,Arctic Coexistence,80000
+Bowhead Whale,Gray Whale,Migration Overlap,12000

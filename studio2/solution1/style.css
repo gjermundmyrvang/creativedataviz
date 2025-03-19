@@ -1,0 +1,72 @@
+:root {
+  --color-base: #1d1d1d; /* Charcoal Black */
+  --color-contrast: #f4f4f4; /* Soft White */
+  --color-accent: #e63946; /* Vivid Red */
+  --color-cool: #457b9d; /* Deep Blue */
+  --color-warm: #f4a261; /* Warm Sand */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-base);
+}
+
+h1 {
+  color: var(--color-contrast);
+  margin-bottom: 20px;
+  font-family: Cassia, Georgia, Times, Serif;
+  word-spacing: 1px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#canvas {
+  border-radius: 20px;
+}
+
+.legend {
+  width: 800px;
+  height: 50;
+  margin-bottom: 20px;
+}
+
+.link {
+  stroke-width: 3px;
+  stroke-opacity: 1;
+  stroke-linecap: round;
+  filter: drop-shadow(0px 0px 5px rgba(228, 251, 255, 0.7));
+  transition: stroke 0.3s ease-in-out;
+}
+
+.labels {
+  font-family: Cassia, Georgia, Times, Serif;
+  font-size: 20px;
+  fill: black;
+  font-weight: 100;
+}
+
+#popup {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: Cassia, Georgia, Times, Serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  max-width: 200px;
+  text-align: center;
+}
